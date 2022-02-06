@@ -6,15 +6,21 @@
 # ... https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md
 #
 
+import os
+player_name = os.getenv("PLAYER_NAME", default="Player One")
+print([player_name])
 
 
 
 # ASK FOR USER INPUT
-userinput = input("Please choose one of : 'rock', 'paper', 'scissors':")
+userinput = input("Rock, Paper, Scissors, Shoot!").upper()
 
 print ("USER CHOSE:", userinput)
 
 # VALIDATE INPUTS
+if(userinput !="SCISSORS" and userinput !="ROCK" and userinput!="PAPER"): 
+    print("INVALID! Please try again!") 
+    quit()
 
 
 
@@ -22,7 +28,7 @@ print ("USER CHOSE:", userinput)
 # COMPUTER CHOICE
 import random
 
-options= ("rock", "paper", "scissors")
+options= ("ROCK", "PAPER", "SCISSORS")
 
 computer_choice = random.choice(options)
 
@@ -33,18 +39,18 @@ print("COMPUTER CHOSE:", computer_choice)
 # DETERMINE THE WINNER
 if userinput == computer_choice:
     print("Both players played", userinput, "It's a tie! Try again!")
-elif userinput == "paper":
-    if computer_choice == "rock":
+elif userinput == "PAPER":
+    if computer_choice == "ROCK":
         print("Paper beats rock. You won! Great job!")
     else:
         print("Scissors beats paper. You lost! Better luck next time!")
-elif userinput == "scissors":
-    if computer_choice == "paper":
+elif userinput == "SCISSORS":
+    if computer_choice == "PAPER":
         print("Scissors beats paper. You won! Great job!")
     else:
         print("Rock beats scissors. You lost! Better luck next time!")
-elif userinput == "rock":
-    if computer_choice == "scissors":
+elif userinput == "ROCK":
+    if computer_choice == "SCISSORS":
         print("Rock beats scissors. You won! Great job!")
     else:
         print("Paper beats rock. You lost!")
