@@ -17,10 +17,16 @@ conda create -n RPS-game-env python=3.9
 conda activate RPS-game-env
 ```
 
+## Play!
 
-
-Please enter this format into the command line if you wish to customize player name: PLAYER_NAME="Your name here" python game.py
-
+To play: 
+```
+python game.py
+```
+Please enter this format into the command line if you wish to customize player name: 
+```
+PLAYER_NAME="Your name here" python game.py
+```
 
 ### How Do You Win? 
 Here are the conditions that dictate a win, loss or tie: 
@@ -28,3 +34,5 @@ Here are the conditions that dictate a win, loss or tie:
 2. Scissors beats paper
 3. Paper beats rock 
 4. Rock ties with rock, scissors ties with scissors, and paper ties with paper
+
+HAVE FUN!
