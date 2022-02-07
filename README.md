@@ -16,7 +16,10 @@ Now create a virtual environment with the following:
 conda create -n RPS-game-env python=3.9
 conda activate RPS-game-env
 ```
-
+Install package dependencies: 
+```
+pip install -r requirements.text
+```
 ## Play!
 
 To play: 
@@ -27,7 +30,11 @@ Please enter this format into the command line if you wish to customize player n
 ```
 PLAYER_NAME="Your name here" python game.py
 ```
-
+## Testing
+To run tests: 
+```
+pytest
+```
 ### How Do You Win? 
 Here are the conditions that dictate a win, loss or tie: 
 1. Rock beats scissors
