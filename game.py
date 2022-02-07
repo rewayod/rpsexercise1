@@ -6,8 +6,25 @@
 # ... https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md
 #
 
+def determine_winner(userinput, computer_choice)
+
+if userinput == computer_choice: 
+    winner = None
+elif userinput =="rock" or computer_choice =="rock":
+    if uerinput == "paper" or computer_choice = "paper": 
+        winner = "paper"
+    elif userinput == "scissors" or computer_choice == "scissors": 
+        winner = "rock"
+elif userinput =="paper" or computer_choice =="paper":
+    if userinput == "scissors" or computer_choice == "scissors": 
+        winner = "scissors"
+
+return winner
+
+#Main
+if __name__ == "__main__":
 import os
-player_name = os.getenv("PLAYER_NAME", default="Player 1")
+player_name = os.getenv("PLAYER_NAME", default="Player One")
 
 
 
