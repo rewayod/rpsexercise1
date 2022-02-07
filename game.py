@@ -7,7 +7,8 @@
 #
 
 import os
-player_name = os.getenv("PLAYER_NAME", default="Player One")
+if __name__ == "__main__":
+player_name = os.getenv("PLAYER_NAME", default="Player 1")
 print([player_name])
 
 
