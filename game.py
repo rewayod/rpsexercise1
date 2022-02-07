@@ -11,7 +11,7 @@ def determine_winner(userinput, computer_choice):
     if userinput == computer_choice: 
         winner = None
     elif userinput =="rock" or computer_choice =="rock":
-        if uerinput == "paper" or computer_choice = "paper": 
+        if userinput == "paper" or computer_choice = "paper": 
             winner = "paper"
         elif userinput == "scissors" or computer_choice == "scissors": 
             winner = "rock"
