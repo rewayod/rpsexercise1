@@ -17,7 +17,14 @@ conda create -n RPS-game-env python=3.9
 conda activate RPS-game-env
 ```
 
-OPIM 243 Project 1: This is the code for the first deliverable, a simple rock-paper-scissors simulator
 
 
 Please enter this format into the command line if you wish to customize player name: PLAYER_NAME="Your name here" python game.py
+
+
+### How Do You Win? 
+Here are the conditions that dictate a win, loss or tie: 
+1. Rock beats scissors
+2. Scissors beats paper
+3. Paper beats rock 
+4. Rock ties with rock, scissors ties with scissors, and paper ties with paper
