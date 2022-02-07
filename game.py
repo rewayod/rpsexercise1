@@ -23,8 +23,8 @@ def determine_winner(userinput, computer_choice):
 
 #Main
 if __name__ == "__main__":
-import os
-player_name = os.getenv("PLAYER_NAME", default="Player One")
+    import os
+    player_name = os.getenv("PLAYER_NAME", default="Player One")
 
 
 
