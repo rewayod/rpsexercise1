@@ -13,8 +13,8 @@ print([player_name])
 
 
 # ASK FOR USER INPUT
+print("Welcome", player_name, "to Rock Paper Scissors...")
 userinput = input("Rock, Paper, Scissors, Shoot!").upper()
-
 print ("USER CHOSE:", userinput)
 
 # VALIDATE INPUTS
