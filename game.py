@@ -6,7 +6,7 @@
 # ... https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md
 #
 
-def determine_winner(userinput, computer_choice)
+def determine_winner(userinput, computer_choice):
 
 if userinput == computer_choice: 
     winner = None
